@@ -62,9 +62,15 @@ const Contact = () => {
 
       // Here you would typically send to your backend API that handles Google Sheets integration
       // For now, we'll simulate the submission
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await fetch("https://script.google.com/macros/s/AKfycby1R30Yww0-SLxjqqXQCGPQXP81RJUbA88fN4Y4fb85uqXopb293PlXi1s_Sb2yRoJa/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(submissionData),
+      });
 
-      console.log('Form submitted:', submissionData);
       
       setSubmitStatus('success');
       setFormData({
