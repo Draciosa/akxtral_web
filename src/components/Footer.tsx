@@ -1,5 +1,6 @@
 import React from 'react';
-import { Mail, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { InstagramLogo, LinkedinLogo, Envelope } from 'phosphor-react';
+import { FaXTwitter } from "react-icons/fa6"; // Font Awesome 6
 
 const Footer = () => {
   return (
@@ -16,9 +17,9 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="text-xl font-semibold mb-4">Contact Us</h4>
+            <h4 className="text-xl font-semibold text-green-500 mb-4">Contact Us</h4>
             <div className="flex items-center mb-3">
-              <Mail className="w-5 h-5 text-green-500 mr-3" />
+              <Envelope className="w-5 h-5 text-green-500 mr-3" />
               <a 
                 href="mailto:info@akxtral.com" 
                 className="text-gray-300 hover:text-green-500 transition-colors duration-200"
@@ -30,39 +31,31 @@ const Footer = () => {
 
           {/* Social Links */}
           <div>
-            <h4 className="text-xl font-semibold mb-4">Follow Us</h4>
+            <h4 className="text-xl font-semibold mb-4 text-green-500">Follow Us</h4>
             <div className="flex space-x-4">
               <a 
-                href="https://facebook.com" 
+                href="https://x.com/Akxtral" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-green-500 transition-colors duration-200"
               >
-                <Facebook className="w-6 h-6" />
+                <FaXTwitter size={32} />
               </a>
               <a 
-                href="https://twitter.com" 
+                href="https://www.instagram.com/akxtral/p/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-green-500 transition-colors duration-200"
               >
-                <Twitter className="w-6 h-6" />
+                <InstagramLogo size={36} />
               </a>
               <a 
-                href="https://instagram.com" 
+                href="https://www.linkedin.com/company/akxtral/" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-green-500 transition-colors duration-200"
               >
-                <Instagram className="w-6 h-6" />
-              </a>
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-300 hover:text-green-500 transition-colors duration-200"
-              >
-                <Linkedin className="w-6 h-6" />
+                <LinkedinLogo size={36} />
               </a>
             </div>
           </div>

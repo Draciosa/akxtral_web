@@ -27,15 +27,15 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-8 sm:py-16 bg-white">
+    <section className="py-8 sm:py-16 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Services Index Header */}
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-4xl sm:text-6xl lg:text-8xl text-green-500 text-center mb-8 sm:mb-16 tracking-wider"
+          transition={{ duration: 1, delay: 0.4 }}
+          className="text-4xl sm:text-6xl lg:text-8xl text-white text-center mb-8 sm:mb-16 tracking-wider"
           style={{
             letterSpacing: '0'
           }}
@@ -53,18 +53,18 @@ const ServicesSection = () => {
                 <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-start gap-6 lg:gap-8`}>
                   {/* Service Number */}
                   <div className="flex-shrink-0 w-full lg:w-auto text-center lg:text-left">
-                    <span className="text-6xl sm:text-7xl lg:text-8xl font-bold text-green-500 leading-none">
+                    <span className="text-6xl sm:text-7xl lg:text-8xl font-bold text-white leading-none">
                       {service.number}
                     </span>
                   </div>
 
                   {/* Service Content */}
                   <div className={`flex-1 pt-2 lg:pt-4 ${isEven ? 'text-left' : 'lg:text-right'}`}>
-                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-green-500 mb-4 lg:mb-6 tracking-wide">
+                    <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 lg:mb-6 tracking-wide">
                       {service.title}
                     </h3>
-                    <p className={`text-gray-700 text-sm sm:text-base lg:text-lg leading-relaxed max-w-4xl ${isEven ? 'ml-0' : 'lg:ml-auto'}`}>
-                      <span className="text-green-500 font-semibold">At Akxtral</span>
+                    <p className={`text-white text-sm sm:text-base lg:text-lg leading-relaxed max-w-4xl ${isEven ? 'ml-0' : 'lg:ml-auto'}`}>
+                      <span className="text-whtie font-semibold">At Akxtral</span>
                       {service.description.substring(service.description.indexOf(','))}
                     </p>
                   </div>
@@ -76,8 +76,8 @@ const ServicesSection = () => {
                     initial={{ scaleX: 0 }}
                     whileInView={{ scaleX: 1 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 1.6, delay: 0.2 }}
-                    className="w-full h-px bg-green-500 origin-center mt-12 sm:mt-20"
+                    transition={{ duration: 2, delay: 0.4 }}
+                    className="w-full h-px bg-white origin-center mt-12 sm:mt-20"
                   />
                 )}
               </AnimatedSection>

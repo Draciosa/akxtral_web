@@ -99,15 +99,15 @@ const Services = () => {
   ];
 
   return (
-    <div className="pt-20 sm:pt-24">
+    <div>
       {/* Hero Section */}
-      <section className="py-8 sm:py-16 bg-white">
+      <section className="pt-20 sm:pt-36 py-8 sm:py-16 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl sm:text-6xl lg:text-8xl text-green-500 text-center mb-8 sm:mb-16 tracking-wider"
+            className="text-4xl sm:text-6xl lg:text-8xl text-white text-center mb-8 sm:mb-16 tracking-wider"
             style={{ letterSpacing: '0' }}
           >
             OUR SERVICES
@@ -115,17 +115,8 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Separator Line */}
-      <motion.div 
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.6, delay: 0.2 }}
-        className="w-full h-px bg-green-500 origin-center"
-      />
-
       {/* Main Services Section */}
-      <section className="py-8 sm:py-16 bg-white">
+      <section className="py-8 sm:py-16 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="space-y-12 sm:space-y-20">
             {services.map((service, index) => {
@@ -136,20 +127,20 @@ const Services = () => {
                   <div className={`flex flex-col ${isEven ? 'lg:flex-row' : 'lg:flex-row-reverse'} items-start gap-8 lg:gap-12`}>
                     {/* Service Number & Icon */}
                     <div className="flex-shrink-0 text-center w-full lg:w-auto">
-                      <span className="text-6xl sm:text-7xl lg:text-8xl font-bold text-green-500 leading-none block mb-4">
+                      <span className="text-6xl sm:text-7xl lg:text-8xl font-bold text-white leading-none block mb-4">
                         {service.number}
                       </span>
-                      <div className="text-green-500 flex justify-center">
+                      <div className="text-white flex justify-center">
                         {service.icon}
                       </div>
                     </div>
 
                     {/* Service Content */}
                     <div className={`flex-1 ${isEven ? 'text-left' : 'lg:text-right'}`}>
-                      <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-green-500 mb-4 lg:mb-6 tracking-wide">
+                      <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold text-white mb-4 lg:mb-6 tracking-wide">
                         {service.title}
                       </h3>
-                      <p className={`text-gray-700 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 lg:mb-8 max-w-4xl ${isEven ? 'ml-0' : 'lg:ml-auto'}`}>
+                      <p className={`text-white text-sm sm:text-base lg:text-lg leading-relaxed mb-6 lg:mb-8 max-w-4xl ${isEven ? 'ml-0' : 'lg:ml-auto'}`}>
                         {service.description}
                       </p>
 
@@ -157,18 +148,18 @@ const Services = () => {
                       <div className={`grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-6 lg:mb-8 max-w-4xl ${isEven ? 'ml-0' : 'lg:ml-auto'}`}>
                         {service.features.map((feature, featureIndex) => (
                           <div key={featureIndex} className={`flex items-center ${isEven ? 'justify-start' : 'lg:justify-end'}`}>
-                            <div className={`w-2 h-2 bg-green-500 rounded-full ${isEven ? 'mr-3' : 'lg:ml-3 lg:order-2 mr-3 lg:mr-0'}`}></div>
-                            <span className="text-gray-600 text-sm sm:text-base">{feature}</span>
+                            <div className={`w-2 h-2 bg-white rounded-full ${isEven ? 'mr-3' : 'lg:ml-3 lg:order-2 mr-3 lg:mr-0'}`}></div>
+                            <span className="text-white text-sm sm:text-base">{feature}</span>
                           </div>
                         ))}
                       </div>
 
                       {/* Technologies */}
                       <div className={`max-w-4xl ${isEven ? 'ml-0' : 'lg:ml-auto'}`}>
-                        <h4 className="text-base sm:text-lg font-semibold text-green-500 mb-3">Technologies We Use</h4>
+                        <h4 className="text-base sm:text-lg font-semibold text-white mb-3">Technologies We Use</h4>
                         <div className={`flex flex-wrap gap-2 ${isEven ? 'justify-start' : 'lg:justify-end'}`}>
                           {service.technologies.map((tech, techIndex) => (
-                            <span key={techIndex} className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
+                            <span key={techIndex} className="bg-white text-green-500 px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                               {tech}
                             </span>
                           ))}
@@ -176,38 +167,17 @@ const Services = () => {
                       </div>
                     </div>
                   </div>
-
-                  {/* Separator Line */}
-                  {index < services.length - 1 && (
-                    <motion.div 
-                      initial={{ scaleX: 0 }}
-                      whileInView={{ scaleX: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 1.6, delay: 0.2 }}
-                      className="w-full h-px bg-green-500 origin-center mt-12 sm:mt-20"
-                    />
-                  )}
                 </AnimatedSection>
               );
             })}
           </div>
         </div>
       </section>
-
-      {/* Separator Line */}
-      <motion.div 
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.6, delay: 0.2 }}
-        className="w-full h-px bg-green-500 origin-center"
-      />
-
       {/* Additional Services Section */}
-      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection delay={0.2}>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-500 text-center mb-8 sm:mb-12">Additional Services</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-8 sm:mb-12">Additional Services</h2>
           </AnimatedSection>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
@@ -216,7 +186,7 @@ const Services = () => {
                 <motion.div
                   whileHover={{ scale: 1.05, y: -5 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
-                  className="bg-gray-50 p-6 sm:p-8 rounded-lg h-full"
+                  className="bg-white p-6 sm:p-8 rounded-lg h-full"
                 >
                   <div className="text-green-500 mb-4 flex justify-center">
                     {service.icon}
@@ -230,20 +200,11 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Separator Line */}
-      <motion.div 
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.6, delay: 0.2 }}
-        className="w-full h-px bg-green-500 origin-center"
-      />
-
       {/* Process Section */}
-      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection delay={0.2}>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-500 text-center mb-8 sm:mb-12">Our Development Process</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-8 sm:mb-12">Our Development Process</h2>
           </AnimatedSection>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 sm:gap-8">
@@ -255,9 +216,9 @@ const Services = () => {
               { step: "05", title: "Deployment", description: "Launch and ongoing support" }
             ].map((phase, index) => (
               <AnimatedSection key={index} delay={0.3 + index * 0.1} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-green-500 mb-4">{phase.step}</div>
-                <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3">{phase.title}</h3>
-                <p className="text-gray-600 text-sm sm:text-base">{phase.description}</p>
+                <div className="text-3xl sm:text-4xl font-bold text-white mb-4">{phase.step}</div>
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-3">{phase.title}</h3>
+                <p className="text-white text-sm sm:text-base">{phase.description}</p>
               </AnimatedSection>
             ))}
           </div>

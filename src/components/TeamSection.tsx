@@ -37,15 +37,15 @@ const TeamSection = () => {
   ];
 
   return (
-    <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
       <div className="max-w-7xl mx-auto">
         {/* Main Title */}
         <motion.h1 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-4xl sm:text-6xl lg:text-8xl text-green-500 text-center mb-8 sm:mb-16 tracking-wider"
+          transition={{ duration: 1, delay: 0.4 }}
+          className="text-4xl sm:text-6xl lg:text-8xl text-white text-center mb-8 sm:mb-16 tracking-wider"
           style={{
             letterSpacing: '0'
           }}
@@ -57,15 +57,15 @@ const TeamSection = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 lg:gap-16">
           {teamMembers.map((member, index) => (
             <AnimatedSection key={index} delay={0.2 + (index * 0.2)} className="text-center">
-              <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden mb-6 sm:mb-8 mx-auto">
+              <div className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 border-2 border-white rounded-full overflow-hidden mb-6 sm:mb-8 mx-auto">
                 <img 
                   src={member.image}
                   alt={member.name}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-green-500 mb-2">{member.name}</h3>
-              <p className="text-green-500 italic text-base sm:text-lg">{member.role}</p>
+              <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-2">{member.name}</h3>
+              <p className="text-white italic text-base sm:text-lg">{member.role}</p>
             </AnimatedSection>
           ))}
         </div>

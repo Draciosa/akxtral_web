@@ -4,7 +4,7 @@ import AnimatedSection from './AnimatedSection';
 
 const AboutUsSection = () => {
   return (
-    <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
+    <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0575e6] to-[#00f260] ">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-16">
           {/* Left Content */}
@@ -14,19 +14,19 @@ const AboutUsSection = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-500 mb-6 sm:mb-8 border-b-2 border-green-500 pb-2 inline-block"
+              className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 sm:mb-8 pb-2 inline-block"
             >
-              About Us
+              Who We Are
             </motion.h2>
             
-            <div className="space-y-4 sm:space-y-6 text-gray-700 text-base sm:text-lg leading-relaxed">
+            <div className="space-y-4 sm:space-y-6 text-white text-base sm:text-lg leading-relaxed">
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.2 }}
               >
-                At <span className="text-green-500 font-semibold">Akxtral</span>, we are a visionary software development company committed to delivering cutting-edge solutions that empower businesses in the digital era. Our mission is to bridge the gap between innovation and practicality, helping enterprises harness the power of technology to drive efficiency, scalability, and success.
+                At <span className="text-white font-semibold">Akxtral</span>, we are a visionary software development company committed to delivering cutting-edge solutions that empower businesses in the digital era. Our mission is to bridge the gap between innovation and practicality, helping enterprises harness the power of technology to drive efficiency, scalability, and success.
               </motion.p>
               
               <motion.p
@@ -44,7 +44,7 @@ const AboutUsSection = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.6 }}
               >
-                At <span className="text-green-500 font-semibold">Akxtral</span>, we believe in pushing boundaries and redefining what's possible. We take a collaborative approach, working closely with businesses to understand their challenges and deliver solutions that not only solve problems but also unlock new opportunities.
+                At <span className="text-white font-semibold">Akxtral</span>, we believe in pushing boundaries and redefining what's possible. We take a collaborative approach, working closely with businesses to understand their challenges and deliver solutions that not only solve problems but also unlock new opportunities.
               </motion.p>
             </div>
           </div>

@@ -124,15 +124,15 @@ const Projects = () => {
   };
 
   return (
-    <div className="pt-20 sm:pt-24">
+    <div>
       {/* Hero Section */}
-      <section className="py-8 sm:py-16 bg-white">
+      <section className="pt-20 sm:pt-36 py-8 sm:py-16 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl sm:text-6xl lg:text-8xl text-green-500 text-center mb-8 sm:mb-16 tracking-wider"
+            className="text-4xl sm:text-6xl lg:text-8xl text-white text-center mb-8 sm:mb-16 tracking-wider"
             style={{ letterSpacing: '0' }}
           >
             OUR PROJECTS
@@ -140,17 +140,8 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Separator Line */}
-      <motion.div 
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.6, delay: 0.2 }}
-        className="w-full h-px bg-green-500 origin-center"
-      />
-
       {/* Main Project Showcase */}
-      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-16">
             {/* Project Image */}
@@ -203,26 +194,26 @@ const Projects = () => {
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <div className="bg-green-100 text-green-700 px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-medium inline-block mb-4">
+                  <div className="bg-white text-green-700 px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-medium inline-block mb-4">
                     {projects[currentProject].category}
                   </div>
                   
-                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-500 mb-4 sm:mb-6">
+                  <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6">
                     {projects[currentProject].title}
                   </h2>
                   
-                  <p className="text-gray-700 text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8">
+                  <p className="text-white text-sm sm:text-base lg:text-lg leading-relaxed mb-6 sm:mb-8">
                     {projects[currentProject].description}
                   </p>
 
                   {/* Features */}
                   <div className="mb-6 sm:mb-8">
-                    <h3 className="text-lg sm:text-xl font-semibold text-green-500 mb-3 sm:mb-4">Key Features:</h3>
+                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">Key Features:</h3>
                     <ul className="space-y-2">
                       {projects[currentProject].features.map((feature, index) => (
                         <li key={index} className="flex items-center">
-                          <div className="w-2 h-2 bg-green-500 rounded-full mr-3 flex-shrink-0"></div>
-                          <span className="text-gray-600 text-sm sm:text-base">{feature}</span>
+                          <div className="w-2 h-2 bg-white rounded-full mr-3 flex-shrink-0"></div>
+                          <span className="text-white text-sm sm:text-base">{feature}</span>
                         </li>
                       ))}
                     </ul>
@@ -230,10 +221,10 @@ const Projects = () => {
 
                   {/* Technologies */}
                   <div className="mb-6 sm:mb-8">
-                    <h3 className="text-lg sm:text-xl font-semibold text-green-500 mb-3 sm:mb-4">Technologies Used:</h3>
+                    <h3 className="text-lg sm:text-xl font-semibold text-white mb-3 sm:mb-4">Technologies Used:</h3>
                     <div className="flex flex-wrap gap-2">
                       {projects[currentProject].technologies.map((tech, index) => (
-                        <span key={index} className="bg-green-100 text-green-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
+                        <span key={index} className="bg-white text-green-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-medium">
                           {tech}
                         </span>
                       ))}
@@ -252,8 +243,8 @@ const Projects = () => {
                 onClick={() => goToProject(index)}
                 className={`w-2 h-2 sm:w-3 sm:h-3 rounded-full transition-all duration-200 ${
                   index === currentProject 
-                    ? 'bg-green-500 scale-125' 
-                    : 'bg-gray-300 hover:bg-gray-400'
+                    ? 'bg-black scale-125' 
+                    : 'bg-white hover:bg-gray-400'
                 }`}
               />
             ))}
@@ -261,20 +252,11 @@ const Projects = () => {
         </div>
       </section>
 
-      {/* Separator Line */}
-      <motion.div 
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.6, delay: 0.2 }}
-        className="w-full h-px bg-green-500 origin-center"
-      />
-
       {/* Project Grid Overview */}
-      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection delay={0.2}>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-500 text-center mb-8 sm:mb-12">All Projects</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-8 sm:mb-12">All Projects</h2>
           </AnimatedSection>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
@@ -299,7 +281,7 @@ const Projects = () => {
                     <div className="bg-green-100 text-green-700 px-2 sm:px-3 py-1 rounded-full text-xs font-medium inline-block mb-2 sm:mb-3">
                       {project.category}
                     </div>
-                    <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">{project.title}</h3>
+                    <h3 className="text-lg sm:text-xl font-bold text-green-500 mb-2">{project.title}</h3>
                     <p className="text-gray-600 text-xs sm:text-sm line-clamp-3">{project.description}</p>
                   </div>
                 </motion.div>

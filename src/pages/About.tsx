@@ -35,15 +35,15 @@ const About = () => {
   ];
 
   return (
-    <div className="pt-20 sm:pt-24">
+    <div>
       {/* Hero Section */}
-      <section className="py-8 sm:py-16 bg-white">
+      <section className="pt-20 sm:pt-36 py-8 sm:py-16 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl sm:text-6xl lg:text-8xl text-green-500 text-center mb-8 sm:mb-16 tracking-wider"
+            className="text-4xl sm:text-6xl lg:text-8xl text-white text-center mb-8 sm:mb-16 tracking-wider"
             style={{ letterSpacing: '0' }}
           >
             ABOUT US
@@ -51,39 +51,20 @@ const About = () => {
         </div>
       </section>
 
-      {/* Separator Line */}
-      <motion.div 
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.6, delay: 0.2 }}
-        className="w-full h-px bg-green-500 origin-center"
-      />
-
       {/* Main About Section */}
-      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row items-start gap-8 lg:gap-16 mb-12 sm:mb-20">
             {/* Left Content */}
             <div className="flex-1 w-full">
-              <motion.h2 
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: 0.2 }}
-                className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-500 mb-6 sm:mb-8 border-b-2 border-green-500 pb-2 inline-block"
-              >
-                Who We Are
-              </motion.h2>
-              
-              <div className="space-y-4 sm:space-y-6 text-gray-700 text-base sm:text-lg leading-relaxed">
+              <div className="space-y-4 sm:space-y-6 text-white text-base sm:text-lg leading-relaxed">
                 <motion.p
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                  At <span className="text-green-500 font-semibold">Akxtral</span>, we are a visionary software development company committed to delivering cutting-edge solutions that empower businesses in the digital era. Founded with the belief that technology should be a catalyst for growth, we have established ourselves as trusted partners for organizations seeking to transform their operations and achieve sustainable success.
+                  At <span className="text-white font-semibold">Akxtral</span>, we are a visionary software development company committed to delivering cutting-edge solutions that empower businesses in the digital era. Founded with the belief that technology should be a catalyst for growth, we have established ourselves as trusted partners for organizations seeking to transform their operations and achieve sustainable success.
                 </motion.p>
                 
                 <motion.p
@@ -139,8 +120,8 @@ const About = () => {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="text-center"
                 >
-                  <div className="text-3xl sm:text-4xl font-bold text-green-500 mb-2">{stat.number}</div>
-                  <div className="text-gray-600 font-medium text-sm sm:text-base">{stat.label}</div>
+                  <div className="text-3xl sm:text-4xl font-bold text-white mb-2">{stat.number}</div>
+                  <div className="text-white font-medium text-sm sm:text-base">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -153,7 +134,7 @@ const About = () => {
                 <div className="text-green-500 mb-4">
                   {value.icon}
                 </div>
-                <h3 className="text-xl sm:text-2xl font-bold text-green-500 mb-4">{value.title}</h3>
+                <h3 className="text-xl sm:text-2xl font-bold text-green-500 mb-4 ">{value.title}</h3>
                 <p className="text-gray-700 leading-relaxed text-sm sm:text-base">{value.description}</p>
               </AnimatedSection>
             ))}
@@ -161,45 +142,36 @@ const About = () => {
         </div>
       </section>
 
-      {/* Separator Line */}
-      <motion.div 
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.6, delay: 0.2 }}
-        className="w-full h-px bg-green-500 origin-center"
-      />
-
       {/* Why Choose Us Section */}
-      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
         <div className="max-w-7xl mx-auto">
           <AnimatedSection delay={0.2}>
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-500 text-center mb-8 sm:mb-12">Why Choose Akxtral?</h2>
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-center mb-8 sm:mb-12">Why Choose Akxtral?</h2>
           </AnimatedSection>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
             <AnimatedSection delay={0.3} className="text-center">
-              <div className="bg-green-100 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-white w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award className="w-6 h-6 sm:w-8 sm:h-8 text-green-500" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-green-500 mb-3">Proven Expertise</h3>
-              <p className="text-gray-700 text-sm sm:text-base">Years of experience delivering successful projects across various industries and technologies.</p>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">Proven Expertise</h3>
+              <p className="text-white text-sm sm:text-base">Years of experience delivering successful projects across various industries and technologies.</p>
             </AnimatedSection>
 
             <AnimatedSection delay={0.4} className="text-center">
-              <div className="bg-green-100 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-white w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-6 h-6 sm:w-8 sm:h-8 text-green-500" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-green-500 mb-3">Collaborative Approach</h3>
-              <p className="text-gray-700 text-sm sm:text-base">We work closely with our clients as partners, ensuring transparent communication throughout the project lifecycle.</p>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">Collaborative Approach</h3>
+              <p className="text-white text-sm sm:text-base">We work closely with our clients as partners, ensuring transparent communication throughout the project lifecycle.</p>
             </AnimatedSection>
 
             <AnimatedSection delay={0.5} className="text-center">
-              <div className="bg-green-100 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="bg-white w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Globe className="w-6 h-6 sm:w-8 sm:h-8 text-green-500" />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-green-500 mb-3">Future-Ready Solutions</h3>
-              <p className="text-gray-700 text-sm sm:text-base">We build scalable, secure, and maintainable solutions that grow with your business needs.</p>
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">Future-Ready Solutions</h3>
+              <p className="text-white text-sm sm:text-base">We build scalable, secure, and maintainable solutions that grow with your business needs.</p>
             </AnimatedSection>
           </div>
         </div>

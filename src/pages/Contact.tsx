@@ -104,15 +104,15 @@ const Contact = () => {
   ];
 
   return (
-    <div className="pt-20 sm:pt-24">
+    <div>
       {/* Hero Section */}
-      <section className="py-8 sm:py-16 bg-white">
+      <section className="pt-20 sm:pt-36 py-8 sm:py-16 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.h1 
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl sm:text-6xl lg:text-8xl text-green-500 text-center mb-8 sm:mb-16 tracking-wider"
+            className="text-4xl sm:text-6xl lg:text-8xl text-white text-center mb-8 sm:mb-16 tracking-wider"
             style={{ letterSpacing: '0' }}
           >
             CONTACT US
@@ -120,26 +120,17 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Separator Line */}
-      <motion.div 
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.6, delay: 0.2 }}
-        className="w-full h-px bg-green-500 origin-center"
-      />
-
       {/* Contact Section */}
-      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-8 sm:py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#0575e6] to-[#00f260]">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col lg:flex-row gap-8 lg:gap-16">
             {/* Contact Form */}
             <div className="flex-1">
               <AnimatedSection delay={0.2}>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-500 mb-6 sm:mb-8 border-b-2 border-green-500 pb-2 inline-block">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 sm:mb-8 pb-2 inline-block">
                   Get In Touch
                 </h2>
-                <p className="text-gray-700 text-sm sm:text-base lg:text-lg mb-6 sm:mb-8">
+                <p className="text-white text-sm sm:text-base lg:text-lg mb-6 sm:mb-8">
                   Ready to start your next project? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
                 </p>
               </AnimatedSection>
@@ -148,7 +139,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
                   {/* Name Field */}
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
                       Name *
                     </label>
                     <input
@@ -165,7 +156,7 @@ const Contact = () => {
 
                   {/* Phone Number Field */}
                   <div>
-                    <label htmlFor="number" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="number" className="block text-sm font-medium text-white mb-2">
                       Phone Number (Optional)
                     </label>
                     <div className="flex gap-2">
@@ -195,7 +186,7 @@ const Contact = () => {
 
                   {/* Email Field */}
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
                       Email *
                     </label>
                     <input
@@ -212,7 +203,7 @@ const Contact = () => {
 
                   {/* Query Field */}
                   <div>
-                    <label htmlFor="query" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="query" className="block text-sm font-medium text-white mb-2">
                       Query *
                     </label>
                     <textarea
@@ -281,7 +272,7 @@ const Contact = () => {
             {/* Contact Information */}
             <div className="flex-1">
               <AnimatedSection delay={0.3}>
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-500 mb-6 sm:mb-8 border-b-2 border-green-500 pb-2 inline-block">
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-6 sm:mb-8 pb-2 inline-block">
                   Contact Information
                 </h2>
               </AnimatedSection>
@@ -298,7 +289,7 @@ const Contact = () => {
                         {info.icon}
                       </div>
                       <div>
-                        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">{info.title}</h3>
+                        <h3 className="text-lg sm:text-xl font-bold text-green-500 mb-2">{info.title}</h3>
                         <p className="text-green-500 font-semibold mb-2 text-sm sm:text-base">{info.details}</p>
                         <p className="text-gray-600 text-sm sm:text-base">{info.description}</p>
                       </div>
@@ -309,7 +300,7 @@ const Contact = () => {
 
               {/* Additional Info */}
               <AnimatedSection delay={0.8}>
-                <div className="mt-8 sm:mt-12 p-4 sm:p-6 bg-green-50 rounded-lg">
+                <div className="mt-8 sm:mt-12 p-4 sm:p-6 bg-gray-50 rounded-lg">
                   <h3 className="text-lg sm:text-xl font-bold text-green-500 mb-4">Why Choose Akxtral?</h3>
                   <ul className="space-y-2 text-gray-700 text-sm sm:text-base">
                     <li className="flex items-center">
@@ -335,15 +326,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-
-      {/* Separator Line */}
-      <motion.div 
-        initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
-        viewport={{ once: true }}
-        transition={{ duration: 1.6, delay: 0.2 }}
-        className="w-full h-px bg-green-500 origin-center"
-      />
     </div>
   );
 };

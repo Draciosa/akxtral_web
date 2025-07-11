@@ -14,9 +14,9 @@ const Home = () => {
       {/* Separator Line */}
       <motion.div 
         initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
+        whileInView={{ scaleX: 0.6 }}
         viewport={{ once: true }}
-        transition={{ duration: 1.6, delay: 0.2 }}
+        transition={{ duration: 2, delay: 0.4 }}
         className="w-full h-px bg-green-500 origin-center"
       />
 
@@ -26,9 +26,9 @@ const Home = () => {
       {/* Separator Line */}
       <motion.div 
         initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
+        whileInView={{ scaleX: 0.6 }}
         viewport={{ once: true }}
-        transition={{ duration: 1.6, delay: 0.2 }}
+        transition={{ duration: 2, delay: 0.4 }}
         className="w-full h-px bg-green-500 origin-center"
       />
 
@@ -38,9 +38,9 @@ const Home = () => {
       {/* Separator Line */}
       <motion.div 
         initial={{ scaleX: 0 }}
-        whileInView={{ scaleX: 1 }}
+        whileInView={{ scaleX: 0.6 }}
         viewport={{ once: true }}
-        transition={{ duration: 1.6, delay: 0.2 }}
+        transition={{ duration: 2, delay: 0.4 }}
         className="w-full h-px bg-green-500 origin-center"
       />
 
