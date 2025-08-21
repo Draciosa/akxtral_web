@@ -17,12 +17,12 @@ const TeamSection = () => {
     {
       name: "ABDUL HAFEEZ",
       role: "CFO", 
-      image: "/hafeez.jpg"
+      image: "/hafeez.png"
     },
     {
       name: "FARHAN SIDDIQUI",
       role: "CCO",
-      image: "/farhan.jpg"
+      image: "/farhan.png"
     },
     {
       name: "GHAIS RAHMAN", 
