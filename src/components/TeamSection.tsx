@@ -22,7 +22,7 @@ const TeamSection = () => {
     {
       name: "FARHAN SIDDIQUI",
       role: "CCO",
-      image: "/farhan.jpg"
+      image: "/farhan.png"
     },
     {
       name: "GHAIS RAHMAN", 
