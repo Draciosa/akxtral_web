@@ -23,6 +23,11 @@ const ServicesSection = () => {
       number: "04",
       title: "CYBERSECURITY SERVICES", 
       description: "At Akxtral, we are your go-to experts for all your cybersecurity needs, specializing in Vulnerability Assessment and Penetration Testing (VAPT) for web applications, mobile apps, and network infrastructure. Our team delivers secure, thorough, and scalable assessments to identify and mitigate real-world threats before they impact your business. Whether you're a startup building your first app or an enterprise securing critical infrastructure, we offer tailored, end-to-end security solutions. With deep technical expertise and industry best practices, we help you stay protected, compliant, and confident. Let's secure your digital assets together"
+    },
+    {
+      number: "05",
+      title: "DIGITAL TRANSFORMATION", 
+      description: "At Akxtral, we are your go-to experts for all your digital transformation needs, whether it's strategy, modernization, or intelligent automation. Our team specializes in building scalable, data-driven solutions that streamline operations, modernize legacy systems, and integrate seamlessly across your organization. Whether you're a growing business beginning your digital journey or an established enterprise optimizing complex workflows, we provide end-to-end support tailored to your goals. With cutting-edge technologies and deep industry expertise, we help you navigate digital change with confidence and unlock new levels of efficiency, agility, and growth. Let’s transform your vision into a future-ready reality."
     }
   ];
 

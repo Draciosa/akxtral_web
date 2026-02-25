@@ -95,7 +95,7 @@ const Projects = () => {
     {
       id: 6,
       title: "AI-Powered Analytics Platform",
-      category: "Web Application",
+      category: "Digital Transformation",
       description: "An intelligent analytics platform that uses machine learning to provide business insights and predictive analytics. The system processes large datasets and generates actionable recommendations for business growth and optimization.",
       image: "https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800",
       technologies: ["Python", "TensorFlow", "React", "PostgreSQL", "AWS"],

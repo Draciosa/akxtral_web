@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSection from '../components/AnimatedSection';
-import { Globe, Smartphone, Shield, Blocks, Code, Database, Cloud, Lock } from 'lucide-react';
+import { Globe, Smartphone, Shield, Blocks, Code, Database, Cloud, Lock, Brain } from 'lucide-react';
 
 const Services = () => {
   const services = [
@@ -72,6 +72,23 @@ const Services = () => {
         "Security Architecture Review"
       ],
       technologies: ["OWASP", "Burp Suite", "Nmap", "Metasploit", "Wireshark", "Kali Linux", "SIEM"]
+    },
+    {
+      number: "05",
+      title: "DIGITAL TRANSFORMATION",
+      icon: <Brain className="w-12 sm:w-14 lg:w-16 h-12 sm:h-14 lg:h-16" />,
+      description: "At Akxtral, we empower businesses with intelligent automation and advanced AI solutions that drive efficiency, reduce operational costs, and unlock data-driven decision-making. From custom AI systems to enterprise-grade automation, we design scalable and secure solutions tailored to your strategic objectives.",
+      features: [
+        "CRM & ERP Integration",
+        "Computer Vision Systems",
+        "End-to-End Automation Systems",
+        "Voice Agent Assistants",
+        "Intelligent Data Syncing",
+        "Chatbot Development",
+        "Cloud Migration & Process Analytics",
+        "AI Consulting & Strategy"
+      ],
+      technologies: ["n8n", "Pinecone", "UiPath", "Twilio", "VAPI", "Weaviate", "Kubeflow"]
     }
   ];
 
